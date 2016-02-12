@@ -8,7 +8,7 @@ function addLinksToVideo() {
 			var result = patt.exec(value).toString().replace("vm", "240p").replace("vf","480p").replace("v1280","720p").replace("v1920","1080p");
 			var value = "https://vidcast.dabble.me/index.html?video_link=" + encodeURIComponent(value) + "&submit=Go";
       var url = chrome.extension.getURL('ic_cast2_black_24dp.png');
-			$( "#cast-bar" ).append( "<a class='pb-button small' href='"+value+"' target='_blank'>"+"<img src='" +url+"' width=\"20\" style=\"vertical-align: middle; margin-bottom: 0.15em;\"/>"+result+"</a>" );
+			$( "#cast-bar" ).append( "<a class='pb-button small' href='"+value+"' target='pbvidcast'>"+"<img src='" +url+"' width=\"20\" style=\"vertical-align: middle; margin-bottom: 0.15em;\"/>"+result+"</a>" );
 		});
 	});
 };
@@ -39,7 +39,7 @@ function addLinksToNews() {
 			var result = patt.exec(value).toString().replace("vm", "240p").replace("vf","480p").replace("v1280","720p").replace("v1920","1080p");
 			var value = "https://vidcast.dabble.me/index.html?video_link=" + encodeURIComponent(value) + "&submit=Go";
       var url = chrome.extension.getURL('ic_cast2_black_24dp.png');
-      $( "#cast-bar-"+numDlBar ).append( "<a class='pb-button small' href='"+value+"' target='_blank'>"+"<img src='" +url+"' width=\"20\" style=\"vertical-align: middle; margin-bottom: 0.15em;\"/>"+result+"</a>" );
+      $( "#cast-bar-"+numDlBar ).append( "<a class='pb-button small' href='"+value+"' target='pbvidcast'>"+"<img src='" +url+"' width=\"20\" style=\"vertical-align: middle; margin-bottom: 0.15em;\"/>"+result+"</a>" );
 		});
 	});
 
