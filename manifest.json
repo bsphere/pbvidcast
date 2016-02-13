@@ -1,8 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "PBVidCast",
-  "description": "This extension will cast Pinkbike videos using VidCast",
-  "version": "0.0.6",
+  "name": "PBVidCast - Chromecast for Pinkbike videos",
+  "short_name": "PBVidCast",
+  "description": "Cast Pinkbike videos with ease (using VidCast)",
+  "version": "0.0.7",
   "icons": {
     "128": "icon_128.png"
   },
