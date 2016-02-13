@@ -1,0 +1,21 @@
+dependencies:
+  override:
+    - echo $CLIENT_SECRET | base64 --decode > ${HOME}/client-secret.json
+    - gcloud auth activate-service-account --key-file ${HOME}/client-secret.json
+    - gcloud config set project $GCLOUD_PROJECT
+
+test:
+  overide:
+    - zip pbcast.zip *
+
+deployment:
+  chrome_web_store:
+    branch: master
+    commands:
+      - >
+          curl
+          -H "Authorization: Bearer `gcloud auth print-access-token`"
+          -H "x-goog-api-version: 2"
+          -X PUT
+          -T pbcast.zip
+          -v https://www.googleapis.com/upload/chromewebstore/v1.1/items/$APP_ID
