@@ -5,7 +5,7 @@ dependencies:
     - gcloud config set project $GCLOUD_PROJECT
 
 test:
-  overide:
+  override:
     - zip pbcast.zip *
 
 deployment:
