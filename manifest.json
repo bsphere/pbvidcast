@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "PBVidCast - Chromecast for Pinkbike videos",
+  "name": "PBVidCast - Chromecast™ for Pinkbike videos",
   "short_name": "PBVidCast",
   "description": "Cast Pinkbike videos with ease (using VidCast) to your Chromecast/Android TV device",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "icons": {
     "128": "icon_128.png"
   },
